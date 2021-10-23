@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #myVideo {
+        min-width: 100%;
+  
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;  
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GEOG 495 LAB 02 EXAMPLE</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="index.html">Abstract</a>
+        <a href="section1.html">Single-use plastic</a>
+        <a href="section2.html">Popularity</a>
+        <a href="section3.html">Environmental Consequences</a>
+        <a href="see_also.html">See Also</a>
+        <a href="references.html">References</a>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Page content -->
+    <div>
+        <video autoplay muted loop id="myVideo">
+            <source src="img/water.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="content">
+            <h1>What are water bottles?</h1>
+            <p>A water bottle is a container that is used to hold water, liquids or other beverages for consumption. The use of a water bottle allows an individual to drink and transport a beverage from one place to another. A water bottle or bottlecan, is usually made of plastic, glass, or metal. Water bottles are available in different shapes, colors, and sizes. In the past, water bottles were sometimes made of wood, bark, or animal skins such as <a href="https://en.wikipedia.org/wiki/Leather">leather</a>, hide and <a href="https://en.wikipedia.org/wiki/Sheepskin">Sheepskin</a>. Water bottles can be either <strong>disposable</strong> or <strong>reusable</strong>. Reusable water bottles can also be used for liquids such as juice, iced tea, alcoholic beverages, or soft drinks. Reusable water bottles reduce plastic waste and contribute to saving the environment. Easily portable, water bottles make for convenient use. Non-reusable water bottles often list nutrition facts.</p>
+            
+        </div>
+    </div>
+
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+        
+        function myFunction() {
+          if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+          } else {
+            video.pause();
+            btn.innerHTML = "Play";
+          }
+        }
+        </script>
+</body>
+
+
+</html>
